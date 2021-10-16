@@ -1,0 +1,55 @@
+<div class="page-header header-filter" style="background-size: cover; background-position: top center;">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 ml-auto mr-auto">
+          <div class="card card-login">
+            <form class="form" style="min-height: 450px">
+              <div class="card-header card-header-primary text-center">
+                <h4 class="card-title">Meus anúncios</h4>
+                <div class="social-line">
+                </div>
+              </div>
+            <div class="card-anuncio">
+                <div class="anuncios">
+                <h4 class="card-title">Professora particular                    
+                    <a [routerLink]="['/editarAnuncio']"><span class="material-icons">edit </span></a>
+                    <a><span class="material-icons" data-toggle="modal" data-target="#exampleModal">delete</span></a>
+                </h4>
+                <p class="card-text">Pedagoga, com especialização no Atendimento Educacional Especializado e Neuroaprendizagem.</p>
+                </div>
+            </div>
+            <div class="card-anuncio">
+                <div class="anuncios">
+                <h4 class="card-title">Aula de violão
+                    <a [routerLink]="['/editarAnuncio']"><span class="material-icons">edit</span></a>
+                    <a><span class="material-icons" data-toggle="modal" data-target="#exampleModal">delete</span></a>
+                </h4>
+                <p class="card-text">Aula de Violão particular! Mais de 15 anos de experiência com música. Prática de bandas.</p>
+                </div>
+            </div>
+            <!-- Modal de delete -->            
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Anúncio excluído</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                 </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Entendi</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Fim do modal-->
+              <div class="footer text-center">
+                <a [routerLink]="['/principal']" class="btn btn-primary btn-link btn-wd btn-lg bg">Voltar</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

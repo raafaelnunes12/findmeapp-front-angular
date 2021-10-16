@@ -1,0 +1,64 @@
+<app-menu></app-menu>
+<div class="page-header" style="flex-direction: column;" >
+  <div class="detalhes-anuncio" style="width: 100%;">
+        <h4 class="card-title">Professora particular </h4>
+        <div class="rodape-detalhes">
+            <span class="badge badge-default">Educação</span>
+            <span class="badge badge-pill badge-info">R$ 70</span>
+        </div>
+        <p class="card-text">Contato: Fulana Silva</p>     
+        <div class="form-group">
+           <label class="label-control">Data do serviço</label>
+           <input type="text" class="form-control datetimepicker"/>   
+        </div>
+        <div class="input-group" style="padding-top: 0px;">
+          <div class="input-group-prepend">
+            <span class="input-group-text" style="padding: 0px  10px  0px  0px;">
+                <i class="material-icons">schedule</i>
+            </span>
+          </div>
+          <input type="number" class="form-control" placeholder="Horas contratas">
+        </div>
+        <div class="bnt-usarponto">  
+            <div class="togglebutton">
+                <label class="utiliza-ponto">
+                  <input type="checkbox">
+                    Utilizar pontos?
+                    <span class="toggle"></span>                      
+                </label>                
+            </div> 
+            <div class="form-group">
+              <label for="disabledTextInput">Pontuação</label>
+              <input type="text" id="disabledTextInput" class="form-control" value="250" readonly>
+            </div> 
+        </div>
+        <label class="label-forma-pagamento">Forma de pagamento: </label>
+            <div class="form-check form-check-radio form-check-inline">        
+            <label class="form-check-label">        
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" checked>boleto
+              <span class="circle">
+                  <span class="check"></span>
+              </span>
+            </label>
+            <label class="form-check-label">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> crédito
+              <span class="circle">
+                  <span class="check"></span>
+              </span>
+            </label>
+            <label class="form-check-label">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> no ato
+              <span class="circle">
+                  <span class="check"></span>
+              </span>
+            </label>
+          </div>
+          <div class="form-group-valor">            
+              <label class="label-control">Total</label> 
+              <span class="badge badge-valor">R$ 200,00</span>
+              <p>Você ganhará 200 pontos!</p>            
+          </div>
+        <div class="btn-detalhes">            
+            <button class="btn btn-primary btn-round">Contratar</button>
+        </div>  
+  </div>

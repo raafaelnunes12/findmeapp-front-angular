@@ -1,0 +1,42 @@
+<app-menu></app-menu>
+  <div class="filtro">
+      <div>
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text">
+                <i class="material-icons">search</i>
+            </span>
+          </div>          
+              <select class="form-control selectpicker" placeholder="Buscar por categoria>" data-style="btn btn-link" id="exampleFormControlSelect1">
+                <option value="" disabled selected>Filtre uma categoria</option>
+                <option>Agro/indústria</option>
+                <option>Automóveis</option>
+                <option>Educação</option>
+                <option>Eletrodomésticos</option>
+                <option>Esporte</option>                    
+                <option>Moda/beleza</option>
+                <option>Música</option>
+                <option>Para casa</option>
+                <option>Pet</option>
+                <option>Saúde</option>
+            </select>          
+          <!--<input type="text" class="form-control" placeholder="Localizar serviço">-->
+          <button class="btn btn-primary btn-fab btn-fab-mini btn-round">
+            <i class="material-icons">search</i>
+          </button>
+          </div>
+        </div>      
+  </div>
+  <!-- FIM FILTROS-->
+  <!-- INÍCIOS ANUNCIOS-->  
+    <div class="card">
+      <a [routerLink]="['/detalheServico']">
+      <div class="card-body">
+        <h4 class="card-title">Professora particular
+            <span class="badge badge-pill badge-info">R$ 70</span>
+        </h4>
+        <p class="card-text">Pedagoga, com especialização no Atendimento Educacional Especializado e Neuroaprendizagem.</p>
+        <button class="btn btn-primary btn-sm">Contrate-me</button>      
+      </div>
+      </a>
+    </div>  
