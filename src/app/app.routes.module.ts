@@ -1,4 +1,5 @@
-import { Routes } from "@angular/router";
+import { NgModule } from "@angular/core";
+import { RouterModule, Routes } from "@angular/router";
 import { LoginComponent } from "./login/login.component";
 import { MainComponent } from "./main/main.component";
 import { ContratarServicoComponent } from "./servico/contratar-servico/contratar-servico.component";
@@ -25,3 +26,9 @@ export const rootRouterConfig: Routes = [
     { path: 'detalheServico', component: DetalheServicoComponent},
     { path: 'contratarServico', component: ContratarServicoComponent}
 ];
+
+@NgModule({
+    imports: [RouterModule.forRoot(rootRouterConfig)],
+    exports: [RouterModule],
+  })
+  export class AppRoutesModule {}
