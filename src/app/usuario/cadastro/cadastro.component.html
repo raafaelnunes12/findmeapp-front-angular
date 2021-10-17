@@ -1,4 +1,3 @@
-<!--
 <div class="page-header header-filter" style="background-size: cover; background-position: top center;">
     <div class="container">
       <div class="row">
@@ -66,7 +65,7 @@
                       <i class="material-icons">home</i>
                     </span>
                   </div>
-                  <input type="text" class="form-control" name="logradouro" id="logradouro" placeholder="rua" readonly>                  
+                  <input type="text" class="form-control" name="logradouro" id="logradouro" placeholder="rua">                  
                   <div class="input-group-prepend">
                     <span class="input-group-text" style="padding-right: 3px; padding-left: 3px">
                       <i class="material-icons">pin</i>
@@ -80,7 +79,7 @@
                       <i class="material-icons">place</i>
                     </span>
                   </div>
-                  <input type="text" class="form-control" name="cidade" id="cidade" placeholder="cidade" readonly>
+                  <input type="text" class="form-control" name="cidade" id="cidade" placeholder="cidade">
                 </div>
                 <div class="input-group">
                   <div class="input-group-prepend">
@@ -88,7 +87,7 @@
                       <i class="material-icons">public</i>
                     </span>
                   </div>
-                  <input type="text" class="form-control" name="estado" id="estado" placeholder="estado" readonly>
+                  <input type="text" class="form-control" name="estado" id="estado" placeholder="estado">
                 </div>
               </div>
               <div class="footer text-center">
@@ -101,28 +100,4 @@
       </div>
     </div>
   </div>
-  -->
-  <form #f="ngForm">
-    <div class="Form-group" >
-   
-      <br><br>
-      <label for="cep">CEP:</label><br>
-      <input type="text" class="Form-control" id="cep" name="cep" [{ngModel}]="cep" (blur)="consultaCep(cep.value , f)">
-   
-      <br><br>
-      <label for="logradouro">LOGRADOURO</label><br>
-      <input type="text" class="Form-control" id="logradouro" name="logradouro" [{ngModel}]="logradouro" placeholder="..." disabled>
-   
-      <br><br>
-      <label for="bairro">BAIRRO</label><br>
-      <input type="text" class="Form-control" id="bairro" name="bairro" [{ngModel}]="bairro" placeholder="..." disabled>
-   
-      <br><br>
-      <label for="cidade">CIDADE</label><br>
-      <input type="text" class="Form-control" id="cidade" name="cidade" [{ngModel}]="cidade" placeholder="..." disabled>
-   
-      <br><br>
-      <label for="uf">UF</label><br>
-      <input type="text" class="Form-control" id="uf" name="uf" [{ngModel}]="uf" placeholder="..." disabled>
-     </div>
-   </form>
+  

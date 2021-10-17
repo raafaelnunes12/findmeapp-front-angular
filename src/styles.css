@@ -11454,6 +11454,11 @@
     background-color: #7b1fa2;
     color: white;
   }
+
+  .btn.btn-lg.dg{
+    background-color:#FF4500;
+    color: white;
+  }
   
   .btn.btn-sm,
   .btn-group-sm>.btn,
@@ -17438,7 +17443,7 @@
   }
   
   .card-login .card-body {
-    padding: 0px 30px 70px 10px;
+    padding: 0px 30px 30px 10px;
   }
   
   .anuncios{
