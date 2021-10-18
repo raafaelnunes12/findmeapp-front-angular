@@ -1,7 +1,7 @@
 import { Component, OnInit } from "@angular/core";
 import { Router } from "@angular/router";
 import { transacaoservico } from "src/app/entity/transacaoservico";
-import { TransacaoServicoService } from "../service/transacao-servico.service";
+import { ServiceService } from "src/app/service/service.service";
 
 @Component({
   selector: "app-minhas-transacoes",
@@ -11,10 +11,7 @@ import { TransacaoServicoService } from "../service/transacao-servico.service";
 export class MinhasTransacoesComponent implements OnInit {
   transacaoservico!: transacaoservico[];
 
-  constructor(
-    private router: Router,
-    private service: TransacaoServicoService
-  ) {}
+  constructor(private router: Router, private service: ServiceService) {}
 
   ngOnInit(): void {}
 

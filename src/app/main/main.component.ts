@@ -1,23 +1,22 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
 import { servico } from "src/app/entity/servico";
-import { ServicoService } from '../servico/service/servico.service';
+import { ServiceService } from "../service/service.service";
 
 @Component({
-  selector: 'app-main',
-  templateUrl: 'main.component.html' 
+  selector: "app-main",
+  templateUrl: "main.component.html",
 })
 export class MainComponent implements OnInit {
-  constructor(private servicoService: ServicoService) { }
+  constructor(private service: ServiceService) {}
 
   public servicos?: servico[];
 
   ngOnInit() {
-    this.servicoService.obterServicos()
-    .subscribe(
-      servico => {
-        this.servicos = servico;        
+    this.service.obterServicos().subscribe(
+      (servico) => {
+        this.servicos = servico;
       },
-      error => console.log(error)
+      (error) => console.log(error)
     );
   }
 }

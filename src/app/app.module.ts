@@ -24,11 +24,9 @@ import { ListarComponent } from "./servico/meus-anuncios/listar/listar.component
 import { DeletarComponent } from "./servico/meus-anuncios/deletar/deletar.component";
 import { FiltrarPorCategoriaComponent } from "./main/filtrar-por-categoria/filtrar-por-categoria.component";
 import { TransacaoServicoComponent } from "./transacao-servico/transacao-servico.component";
-import { UsuarioService } from "./usuario/service/usuario.service";
-import { ServicoService } from "./servico/service/servico.service";
 import { ServicoComponent } from "./servico/cadastro/cadastro-servico.component";
 import { ContratarComponent } from "./transacao-servico/contratar/contratar.component";
-import { TransacaoServicoService } from "./transacao-servico/service/transacao-servico.service";
+import { ServiceService } from "./service/service.service";
 
 @NgModule({
   declarations: [
@@ -59,12 +57,7 @@ import { TransacaoServicoService } from "./transacao-servico/service/transacao-s
     CommonModule,
     ReactiveFormsModule,
   ],
-  providers: [
-    { provide: APP_BASE_HREF, useValue: "/" },
-    UsuarioService,
-    ServicoService,
-    TransacaoServicoService
-  ],
+  providers: [{ provide: APP_BASE_HREF, useValue: "/" }, ServiceService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
