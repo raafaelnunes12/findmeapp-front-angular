@@ -1,0 +1,36 @@
+{
+  "servicos": [
+    {
+      "id": 1,
+      "titulo": "Professora",
+      "descricao": "Professora de ingles",
+      "categoria": "Educação",
+      "usuario": 1,
+      "valor": 100
+    },   
+    {
+      "id": 2,
+      "titulo": "Pedreiro",
+      "descricao": "Pedreiro de casa",
+      "categoria": "Casa",
+      "usuario": 1,
+      "valor": 200
+    },
+    {
+      "id": 3,
+      "titulo": "Motorista",
+      "descricao": "Motorisca particular",
+      "categoria": "Serviço",
+      "usuario": 1,
+      "valor": 200
+    },
+    {
+      "id": 4,
+      "titulo": "Cozinheiro",
+      "descricao": "Cheff de cozinha",
+      "categoria": "Comida",
+      "usuario": 1,
+      "valor": 50
+    }
+  ]
+}

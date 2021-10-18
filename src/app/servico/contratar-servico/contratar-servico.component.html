@@ -4,7 +4,7 @@
         <h4 class="card-title">Professora particular </h4>
         <div class="rodape-detalhes">
             <span class="badge badge-default">Educação</span>
-            <span class="badge badge-pill badge-info">R$ 70</span>
+            <span class="badge badge-pill badge-info" #valorHora>R$ 70</span>
         </div>
         <p class="card-text">Contato: Fulana Silva</p>     
         <div class="form-group">
@@ -17,7 +17,7 @@
                 <i class="material-icons">schedule</i>
             </span>
           </div>
-          <input type="number" class="form-control" placeholder="Horas contratas">
+          <input type="number" class="form-control" placeholder="Horas contratas" id="horasContratadas" #qtdeHoras>
         </div>
         <div class="bnt-usarponto">  
             <div class="togglebutton">
@@ -55,8 +55,8 @@
           </div>
           <div class="form-group-valor">            
               <label class="label-control">Total</label> 
-              <span class="badge badge-valor">R$ 200,00</span>
-              <p>Você ganhará 200 pontos!</p>            
+              <span class="badge badge-valor">R$ {{ calculaValorTotal }}</span>
+              <p>Você ganhará {{ calculaValorTotal }} pontos!</p>            
           </div>
         <div class="btn-detalhes">            
             <button class="btn btn-primary btn-round">Contratar</button>

@@ -1,16 +1,20 @@
 import { HttpClient } from "@angular/common/http";
 import { Injectable } from "@angular/core";
+import { Observable } from "rxjs";
 import { servico } from "src/app/entity/servico";
 
-@Injectable({
-  providedIn: "root",
-})
+@Injectable()
 export class ServicoService {
   constructor(private http: HttpClient) {}
 
-  url = "http://localhost:8080/servico";
+  protected urlServiceV1 = "http://localhost:3000";
 
   cadastrarServico(servico: servico) {
-    return this.http.post<servico>(this.url, servico);
+    return this.http.post<servico>(this.urlServiceV1, servico);
+  }
+
+  obterServicos() : Observable<servico[]> {
+    return this.http.
+    get<servico[]>(this.urlServiceV1 + "/produtos");       
   }
 }

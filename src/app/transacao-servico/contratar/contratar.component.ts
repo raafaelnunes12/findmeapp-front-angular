@@ -10,11 +10,10 @@ import { Component, OnInit } from '@angular/core';
   styles: [
   ]
 })
-export class ContratarComponent implements OnInit {
+export class ContratarComponent {
 
   constructor() { }
 
-  ngOnInit(): void {
-  }
+  
 
 }

@@ -29,14 +29,27 @@
   </div>
   <!-- FIM FILTROS-->
   <!-- INÍCIOS ANUNCIOS-->  
-    <div class="card">
+  <div class="card">
+    <a [routerLink]="['/detalheServico']">
+    <div class="card-body">
+      <h4 class="card-title">teste
+          <span class="badge badge-pill badge-info">teste</span>
+      </h4>
+      <p class="card-text">teste</p>
+      <button class="btn btn-primary btn-sm">Contrate-me</button>      
+    </div>
+    </a>
+  </div> 
+   <!--
+    <div *ngFor="let servico of servicos" class="card">
       <a [routerLink]="['/detalheServico']">
       <div class="card-body">
-        <h4 class="card-title">Professora particular
-            <span class="badge badge-pill badge-info">R$ 70</span>
+        <h4 class="card-title">{{ servico.titulo }}
+            <span class="badge badge-pill badge-info">{{ servico.valor }}</span>
         </h4>
-        <p class="card-text">Pedagoga, com especialização no Atendimento Educacional Especializado e Neuroaprendizagem.</p>
+        <p class="card-text">{{ servico.descricao }}</p>
         <button class="btn btn-primary btn-sm">Contrate-me</button>      
       </div>
       </a>
     </div>  
+    -->
