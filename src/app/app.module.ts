@@ -20,7 +20,6 @@ import { DetalheServicoComponent } from "./servico/detalhe-servico/detalhe-servi
 import { CadastroComponent } from "./usuario/cadastro/cadastro.component";
 import { AlterarCadatroComponent } from "./usuario/meus-dados/alterar-cadatro/alterar-cadatro.component";
 import { DeletarCadatroComponent } from "./usuario/meus-dados/deletar-cadatro/deletar-cadatro.component";
-import { AtualizarComponent } from "./servico/atualizar/atualizar.component";
 import { ListarComponent } from "./servico/meus-anuncios/listar/listar.component";
 import { DeletarComponent } from "./servico/meus-anuncios/deletar/deletar.component";
 import { FiltrarPorCategoriaComponent } from "./main/filtrar-por-categoria/filtrar-por-categoria.component";
@@ -29,6 +28,7 @@ import { UsuarioService } from "./usuario/service/usuario.service";
 import { ServicoService } from "./servico/service/servico.service";
 import { ServicoComponent } from "./servico/cadastro/cadastro-servico.component";
 import { ContratarComponent } from "./transacao-servico/contratar/contratar.component";
+import { TransacaoServicoService } from "./transacao-servico/service/transacao-servico.service";
 
 @NgModule({
   declarations: [
@@ -45,7 +45,6 @@ import { ContratarComponent } from "./transacao-servico/contratar/contratar.comp
     ServicoComponent,
     AlterarCadatroComponent,
     DeletarCadatroComponent,
-    AtualizarComponent,
     ListarComponent,
     DeletarComponent,
     FiltrarPorCategoriaComponent,
@@ -64,6 +63,7 @@ import { ContratarComponent } from "./transacao-servico/contratar/contratar.comp
     { provide: APP_BASE_HREF, useValue: "/" },
     UsuarioService,
     ServicoService,
+    TransacaoServicoService
   ],
   bootstrap: [AppComponent],
 })
