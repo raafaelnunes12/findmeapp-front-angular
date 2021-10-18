@@ -7,14 +7,14 @@ import { servico } from "src/app/entity/servico";
 export class ServicoService {
   constructor(private http: HttpClient) {}
 
-  protected urlServiceV1 = "http://localhost:3000";
+  protected url = "http://localhost:8080/servicos";
 
   cadastrarServico(servico: servico) {
-    return this.http.post<servico>(this.urlServiceV1, servico);
+    return this.http.post<servico>(this.url, servico);
   }
 
   obterServicos() : Observable<servico[]> {
     return this.http.
-    get<servico[]>(this.urlServiceV1 + "/produtos");       
+    get<servico[]>(this.url);       
   }
 }

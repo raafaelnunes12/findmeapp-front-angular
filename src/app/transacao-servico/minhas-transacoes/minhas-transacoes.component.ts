@@ -1,3 +1,37 @@
+import { Component, OnInit } from "@angular/core";
+import { Router } from "@angular/router";
+import { transacaoservico } from "src/app/entity/transacaoservico";
+import { TransacaoServicoService } from "../service/transacao-servico.service";
+
+@Component({
+  selector: "app-minhas-transacoes",
+  template: "minhas-transacoes.component.html",
+  styles: [],
+})
+export class MinhasTransacoesComponent implements OnInit {
+  transacaoservico!: transacaoservico[];
+
+  constructor(
+    private router: Router,
+    private service: TransacaoServicoService
+  ) {}
+
+  ngOnInit(): void {}
+
+  listarServicosContratados() {
+    this.service.listarTransacoesContratadas().subscribe((data) => {
+      this.transacaoservico = data;
+    });
+  }
+
+  listarServicosPrestados() {
+    this.service.listarTransacoesPrestadas().subscribe((data) => {
+      this.transacaoservico = data;
+    });
+  }
+}
+
+/*
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -18,3 +52,4 @@ export class MinhasTransacoesComponent implements OnInit {
   }
 
 }
+*/

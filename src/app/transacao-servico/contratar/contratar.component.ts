@@ -1,19 +1,17 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-contratar',
-  template: `
-    <p>
-      contratar works!
-    </p>
-  `,
-  styles: [
-  ]
+  templateUrl: 'contratar.component.html'
 })
 export class ContratarComponent {
+  @ViewChild('valorHora') valorHora: any;
+  @ViewChild('qtdeHoras') qtdeHoras: any;
 
-  constructor() { }
+  constructor() { }  
 
-  
-
+  calculaValorTotal(){
+    let totalValor = this.valorHora * this.qtdeHoras;
+    return totalValor;
+  }
 }

@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { servico } from "src/app/entity/servico";
 import { ServicoService } from '../servico/service/servico.service';
 
-
 @Component({
   selector: 'app-main',
   templateUrl: 'main.component.html' 
