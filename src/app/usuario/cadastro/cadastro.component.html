@@ -1,103 +1,183 @@
-<div class="page-header header-filter" style="background-size: cover; background-position: top center;">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4 col-md-6 ml-auto mr-auto">
-          <div class="card card-login">
-            <form class="form" style="min-height: 450px">
-              <div class="card-header card-header-primary text-center">
-                <h4 class="card-title">Novo usuário</h4>
-                <div class="social-line">
+<div
+  class="page-header header-filter"
+  style="background-size: cover; background-position: top center"
+>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-md-6 ml-auto mr-auto">
+        <div class="card card-login">
+          <form class="form" style="min-height: 450px">
+            <div class="card-header card-header-primary text-center">
+              <h4 class="card-title">Novo usuário</h4>
+              <div class="social-line"></div>
+            </div>
+            <div class="card-body">
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">
+                    <i class="material-icons">face</i>
+                  </span>
                 </div>
+                <input
+                  type="text"
+                  class="form-control"
+                  [(ngModel)]="usuario.nome"
+                  name="nome"
+                  placeholder="nome"
+                />
               </div>
-              <div class="card-body">
-                <div class="input-group">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text">
-                      <i class="material-icons">face</i>
-                    </span>
-                  </div>
-                  <input type="text" class="form-control" name="nome" placeholder="nome">
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">
+                    <i class="material-icons">lock_outline</i>
+                  </span>
                 </div>
-                <div class="input-group">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text">
-                      <i class="material-icons">lock_outline</i>
-                    </span>
-                  </div>
-                  <input type="email" class="form-control" name="email" placeholder="email">
-                </div>
-                <div class="input-group">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text">
-                      <i class="material-icons">mail_outline</i>
-                    </span>
-                  </div>
-                  <input type="password" class="form-control" name="senha" placeholder="senha">
-                </div>
-                <div class="input-group">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text">
-                      <i class="material-icons">contact_page</i>
-                    </span>
-                  </div>
-                  <input type="text" class="form-control" name="cpf_cnpj" placeholder="documento">
-                </div>
-                <div class="input-group">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text">
-                      <i class="material-icons">phone_iphone</i>
-                    </span>
-                  </div>
-                  <input type="text" class="form-control"  name="telefone" placeholder="telefone">
-                </div>
-                <div class="input-group">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text">
-                      <i class="material-icons">source</i>
-                    </span>
-                  </div>                  
-                  <input type="text" class="form-control" name="cep" id="cep" placeholder="cep" maxlength="8">
-                <p><a href="https://buscacepinter.correios.com.br/app/endereco/index.php" target="_blank">Não sabe seu CEP?</a></p>
-                </div>
-                <div class="input-group">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text">
-                      <i class="material-icons">home</i>
-                    </span>
-                  </div>
-                  <input type="text" class="form-control" name="logradouro" id="logradouro" placeholder="rua">                  
-                  <div class="input-group-prepend">
-                    <span class="input-group-text" style="padding-right: 3px; padding-left: 3px">
-                      <i class="material-icons">pin</i>
-                    </span>
-                  </div>
-                  <input type="text" class="form-control numero"  name="numero" id="numero" placeholder="nº">                  
-                </div>
-                <div class="input-group">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text">
-                      <i class="material-icons">place</i>
-                    </span>
-                  </div>
-                  <input type="text" class="form-control" name="cidade" id="cidade" placeholder="cidade">
-                </div>
-                <div class="input-group">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text">
-                      <i class="material-icons">public</i>
-                    </span>
-                  </div>
-                  <input type="text" class="form-control" name="estado" id="estado" placeholder="estado">
-                </div>
+                <input
+                  type="email"
+                  class="form-control"
+                  [(ngModel)]="usuario.email"
+                  name="email"
+                  placeholder="email"
+                />
               </div>
-              <div class="footer text-center">
-                <a class="btn btn-primary btn-link btn-wd btn-lg bg">Salvar</a>
-                <a class="btn btn-primary btn-link btn-wd btn-lg">Voltar</a>                
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">
+                    <i class="material-icons">mail_outline</i>
+                  </span>
+                </div>
+                <input
+                  type="password"
+                  class="form-control"
+                  [(ngModel)]="usuario.senha"
+                  name="senha"
+                  placeholder="senha"
+                />
               </div>
-            </form>
-          </div>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">
+                    <i class="material-icons">contact_page</i>
+                  </span>
+                </div>
+                <input
+                  type="text"
+                  class="form-control"
+                  [(ngModel)]="usuario.cpf_cnpj"
+                  name="cpf_cnpj"
+                  placeholder="documento"
+                />
+              </div>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">
+                    <i class="material-icons">phone_iphone</i>
+                  </span>
+                </div>
+                <input
+                  type="text"
+                  class="form-control"
+                  [(ngModel)]="usuario.telefone"
+                  name="telefone"
+                  placeholder="telefone"
+                />
+              </div>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">
+                    <i class="material-icons">source</i>
+                  </span>
+                </div>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="cep"
+                  [(ngModel)]="usuario.cep"
+                  id="cep"
+                  placeholder="cep"
+                  maxlength="8"
+                />
+                <p>
+                  <a
+                    href="https://buscacepinter.correios.com.br/app/endereco/index.php"
+                    target="_blank"
+                    >Não sabe seu CEP?</a
+                  >
+                </p>
+              </div>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">
+                    <i class="material-icons">home</i>
+                  </span>
+                </div>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="endereco"
+                  [(ngModel)]="usuario.endereco"
+                  id="endereco"
+                  placeholder="rua"
+                />
+                <div class="input-group-prepend">
+                  <span
+                    class="input-group-text"
+                    style="padding-right: 3px; padding-left: 3px"
+                  >
+                    <i class="material-icons">pin</i>
+                  </span>
+                </div>
+                <input
+                  type="text"
+                  class="form-control numero"
+                  [(ngModel)]="usuario.numero"
+                  name="numero"
+                  id="numero"
+                  placeholder="nº"
+                />
+              </div>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">
+                    <i class="material-icons">place</i>
+                  </span>
+                </div>
+                <input
+                  type="text"
+                  class="form-control"
+                  [(ngModel)]="usuario.cidade"
+                  name="cidade"
+                  id="cidade"
+                  placeholder="cidade"
+                />
+              </div>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">
+                    <i class="material-icons">public</i>
+                  </span>
+                </div>
+                <input
+                  type="text"
+                  class="form-control"
+                  [(ngModel)]="usuario.sigla_estado"
+                  name="sigla_estado"
+                  id="sigla_estado"
+                  placeholder="estado"
+                />
+              </div>
+            </div>
+            <div class="footer text-center">
+              <a
+                (click)="cadastrarUsuario()"
+                class="btn btn-primary btn-link btn-wd btn-lg bg"
+                >Salvar</a
+              >
+              <a class="btn btn-primary btn-link btn-wd btn-lg">Voltar</a>
+            </div>
+          </form>
         </div>
       </div>
     </div>
   </div>
-  
+</div>

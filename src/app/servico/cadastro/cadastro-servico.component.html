@@ -1,63 +1,95 @@
-  <div class="page-header header-filter" style="background-size: cover; background-position: top center;">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4 col-md-6 ml-auto mr-auto">
-          <div class="card card-login">
-            <form class="form" style="min-height: 450px">
-              <div class="card-header card-header-primary text-center">
-                <h4 class="card-title">Novo anúncio</h4>
-                <div class="social-line">
+<div
+  class="page-header header-filter"
+  style="background-size: cover; background-position: top center"
+>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-md-6 ml-auto mr-auto">
+        <div class="card card-login">
+          <form class="form" style="min-height: 450px">
+            <div class="card-header card-header-primary text-center">
+              <h4 class="card-title">Novo anúncio</h4>
+              <div class="social-line"></div>
+            </div>
+            <div class="card-body">
+              <div class="input-group" style="margin-top: 2px">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">
+                    <i class="material-icons">title</i>
+                  </span>
                 </div>
+                <input
+                  type="text"
+                  class="form-control"
+                  [(ngModel)]="servico.titulo"
+                  name="titulo"
+                  placeholder="Título do anúncio"
+                />
               </div>
-              <div class="card-body">
-                <div class="input-group" style="margin-top: 2px">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text">
-                      <i class="material-icons">title</i>
-                    </span>
-                  </div>
-                  <input type="text" class="form-control" placeholder="Título do anúncio" value="">
-                </div>                
-                <div class="input-group" style="margin-top: 2px">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text">
-                      <i class="material-icons">list_alt</i>
-                    </span>
-                  </div>
-                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Descrição do anúncio" ></textarea>
+              <div class="input-group" style="margin-top: 2px">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">
+                    <i class="material-icons">list_alt</i>
+                  </span>
                 </div>
-                <div class="input-group" style="margin-top: 2px">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text">
-                      <i class="material-icons">category</i>
-                    </span>
-                  </div>
-                  <select type="text" class="form-control selectpicker" placeholder="Categoria">
-                      <option>Imóveis</option>  
-                      <option>Autos e peças</option>  
-                      <option>Serviços</option>  
-                      <option>Músicas e hobbies</option>  
-                      <option>Esportes e lazer</option>  
-                      <option>Moda e beleza</option>  
-                      <option>Agro e indústria</option>   
-                    </select>
+                <textarea
+                  class="form-control"
+                  [(ngModel)]="servico.descricao"
+                  name="descricao"
+                  id="exampleFormControlTextarea1"
+                  rows="3"
+                  placeholder="Descrição do anúncio"
+                ></textarea>
+              </div>
+              <div class="input-group" style="margin-top: 2px">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">
+                    <i class="material-icons">category</i>
+                  </span>
                 </div>
-                <div class="input-group" style="margin-top: 2px">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text">
-                      <i class="material-icons">paid</i>
-                    </span>
-                  </div>
-                  <input type="number" class="form-control" placeholder="Valor por hora R$" value="">
-                </div>   
+                <select
+                  type="text"
+                  class="form-control selectpicker"
+                  placeholder="Categoria"
+                >
+                  <option>PARA_CASA</option>
+                  <option>AUTOMOVEIS</option>
+                  <option>ELETRONICO</option>
+                  <option>MUSICA</option>
+                  <option>ESPORTE</option>
+                  <option>SAUDE</option>
+                  <option>PET</option>
+                  <option>MODA_BELEZA</option>
+                  <option>EDUCACAO</option>
+                  <option>AGRO_INDUSTRIA</option>
+                </select>
               </div>
-              <div class="footer text-center">
-                <a class="btn btn-primary btn-link btn-wd btn-lg bg">Salvar</a>
-                <a [routerLink]="['/principal']" class="btn btn-primary btn-link btn-wd btn-lg">Voltar</a>
+              <div class="input-group" style="margin-top: 2px">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">
+                    <i class="material-icons">paid</i>
+                  </span>
+                </div>
+                <input
+                  type="number"
+                  [(ngModel)]="servico.valor"
+                  name="valor"
+                  class="form-control"
+                  placeholder="Valor por hora R$"
+                />
               </div>
-            </form>
-          </div>
+            </div>
+            <div class="footer text-center">
+              <a
+                (click)="cadastrarServico()"
+                class="btn btn-primary btn-link btn-wd btn-lg bg"
+                >Salvar</a
+              >
+              <a class="btn btn-primary btn-link btn-wd btn-lg">Voltar</a>
+            </div>
+          </form>
         </div>
       </div>
     </div>
   </div>
+</div>

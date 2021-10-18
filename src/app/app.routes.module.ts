@@ -9,26 +9,26 @@ import { CadastroComponent } from "./usuario/cadastro/cadastro.component";
 import { EditarAnuncioComponent } from "./servico/meus-anuncios/editar-anuncio/editar-anuncio.component";
 import { MeusAnunciosComponent } from "./servico/meus-anuncios/meus-anuncios.component";
 import { MeusDadosComponent } from "./usuario/meus-dados/meus-dados.component";
-import { MinhasTransacoesComponent } from "./usuario/minhas-transacoes/minhas-transacoes.component";
+import { MinhasTransacoesComponent } from "./transacao-servico/minhas-transacoes/minhas-transacoes.component";
 import { ServicoComponent } from "./servico/cadastro/cadastro-servico.component";
 
 export const rootRouterConfig: Routes = [
-    { path: '', redirectTo: '/login', pathMatch: 'full'},
-    { path: 'login', component: LoginComponent},
-    { path: 'sobre', component: SobreComponent},
-    { path: 'cadastroUsuario', component: CadastroComponent},
-    { path: 'principal', component: MainComponent},
-    { path: 'meusDados', component: MeusDadosComponent},
-    { path: 'meusAnuncios', component: MeusAnunciosComponent},
-    { path: 'editarAnuncio', component: EditarAnuncioComponent},
-    { path: 'minhasTransacoes', component: MinhasTransacoesComponent},
-    { path: 'detalheServico', component: DetalheServicoComponent},
-    { path: 'contratarServico', component: ContratarServicoComponent},
-    { path: 'cadastroServico', component: ServicoComponent}
+  { path: "", redirectTo: "/login", pathMatch: "full" },
+  { path: "login", component: LoginComponent },
+  { path: "sobre", component: SobreComponent },
+  { path: "cadastroUsuario", component: CadastroComponent },
+  { path: "principal", component: MainComponent },
+  { path: "meusDados", component: MeusDadosComponent },
+  { path: "meusAnuncios", component: MeusAnunciosComponent },
+  { path: "editarAnuncio", component: EditarAnuncioComponent },
+  { path: "minhasTransacoes", component: MinhasTransacoesComponent },
+  { path: "detalheServico", component: DetalheServicoComponent },
+  { path: "contratarServico", component: ContratarServicoComponent },
+  { path: "cadastroServico", component: ServicoComponent },
 ];
 
 @NgModule({
-    imports: [RouterModule.forRoot(rootRouterConfig)],
-    exports: [RouterModule],
-  })
-  export class AppRoutesModule {}
+  imports: [RouterModule.forRoot(rootRouterConfig)],
+  exports: [RouterModule],
+})
+export class AppRoutesModule {}
