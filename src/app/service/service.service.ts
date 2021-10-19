@@ -15,7 +15,7 @@ export class ServiceService {
 
   // Service para o Usuario:
 
-  urlUsuario = "/usuario";
+  urlUsuario = this.url + "/usuario";
 
   cadastrarUsuario(usuario: usuario) {
     return this.http.post<usuario>(this.urlUsuario, usuario);
