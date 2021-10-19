@@ -35,7 +35,7 @@ export class ServiceService {
 
   // Service para o Servico:
 
-  urlServico = "/servico";
+  urlServico = this.url + "/servico";
 
   cadastrarServico(servico: servico) {
     return this.http.post<servico>(this.urlServico, servico);
@@ -47,11 +47,9 @@ export class ServiceService {
 
   // Service para o Transacao Servico:
 
-  urlTransacaoServico = "/transacao_servico";
-  urlContratados =
-    "http://localhost:8080/transacao_servico/servicos_contratados";
-
-  urlPrestados = "http://localhost:8080/transacao_servico/servicos_prestados";
+  urlTransacaoServico = this.url + "/transacao_servico";
+  urlContratados = this.urlTransacaoServico + "/servicos_contratados";
+  urlPrestados = this.urlTransacaoServico + "/servicos_prestados";
 
   contratar(transacaoservico: transacaoservico) {
     return this.http.post<transacaoservico>(

@@ -25,6 +25,13 @@
                   name="titulo"
                   placeholder="Título do anúncio"
                 />
+                <input
+                  type="text"
+                  class="form-control"
+                  [(ngModel)]="servico.usuario_nome"
+                  name="usuario_nome"
+                  placeholder="Seu nome aqui"
+                />
               </div>
               <div class="input-group" style="margin-top: 2px">
                 <div class="input-group-prepend">
@@ -49,6 +56,8 @@
                 </div>
                 <select
                   type="text"
+                  [(ngModel)]="servico.categoria_descricao"
+                  name="categoria_descricao"
                   class="form-control selectpicker"
                   placeholder="Categoria"
                 >

@@ -1,11 +1,8 @@
-import { categoria } from "./categoria";
-import { usuario } from "./usuario";
-
 export class servico {
   id?: number;
   titulo?: String;
   descricao?: String;
-  categoria?: categoria;
-  usuario?: usuario;
+  categoria_descricao?: String;
+  usuario_nome?: String;
   valor?: number;
 }
