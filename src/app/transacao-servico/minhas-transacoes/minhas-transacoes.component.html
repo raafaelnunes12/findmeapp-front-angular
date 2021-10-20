@@ -1,37 +1,24 @@
 <app-menu></app-menu>
 <div class="page-header" style="flex-direction: column">
-  <!-- INÍCIOS ANUNCIOS-->
   <div class="detalhes-anuncio" style="width: 100%">
     <h4 class="card-title">Histórico de transações</h4>
     <hr />
-    <!-- TESTE NAV -->
     <ul class="nav nav-pills nav-pills-icons" role="tablist">
-      <!--
-        color-classes: "nav-pills-primary", "nav-pills-info", "nav-pills-success", "nav-pills-warning","nav-pills-danger"
-    -->
       <li class="nav-item">
-        <a
-          class="nav-link active"
-          href="#dashboard-1"
-          role="tab"
-          data-toggle="tab"
-          >Contratados</a
-        >
+        <a class="nav-link active" href="#dashboard-1" role="tab" data-toggle="tab">Contratados</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#schedule-1" role="tab" data-toggle="tab"
-          >Prestados</a
-        >
+        <a class="nav-link" href="#schedule-1" role="tab" data-toggle="tab">Prestados</a>
       </li>
     </ul>
     <div class="tab-content tab-space">
       <div class="tab-pane active" id="dashboard-1">
         <div class="card">
           <div class="card-body">
-            <h4 class="card-title">Eletrecista</h4>
-            <h6 class="card-subtitle mb-2 text-muted">João da Silva</h6>
-            <p class="card-text">R$ 175,00</p>
-            <a href="javascript:;" class="card-link">10/05/2021</a>
+            <h4 class="card-title">Professor Particular</h4>
+            <h6 class="card-subtitle mb-2 text-muted">Victor Cavalheiro</h6>
+            <p class="card-text">R$ 70</p>
+            <a href="javascript:;" class="card-link">21/10/2021</a>
             <a href="javascript:;" class="card-link">Boleto</a>
           </div>
         </div>
@@ -48,19 +35,17 @@
       <div class="tab-pane" id="schedule-1">
         <div class="card">
           <div class="card-body">
-            <h4 class="card-title">Pintor</h4>
-            <h6 class="card-subtitle mb-2 text-muted">Pedro de Souza</h6>
+            <h4 class="card-title">Aula de violão</h4>
+            <h6 class="card-subtitle mb-2 text-muted">Lucas Trindade</h6>
             <p class="card-text">R$ 400,00</p>
             <a href="javascript:;" class="card-link">01/07/2021</a>
-            <a href="javascript:;" class="card-link">Crédito</a>
+            <a href="javascript:;" class="card-link">Boleto</a>
           </div>
         </div>
       </div>
     </div>
     <div class="btn-detalhes">
-      <a [routerLink]="['/principal']"
-        ><button class="btn btn-primary btn-round">Voltar</button></a
-      >
+      <a [routerLink]="['/principal']"><button class="btn btn-primary btn-round">Voltar</button></a>
     </div>
   </div>
 </div>

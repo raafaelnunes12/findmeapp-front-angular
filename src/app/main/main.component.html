@@ -32,18 +32,43 @@
   </div>
 </div>
 <!-- FIM FILTROS-->
-<!-- INÍCIOS ANUNCIOS-->
-<!--<div class="card">
+<!-- INÍCIOS FIXO-->
+  <div class="card">
     <a [routerLink]="['/detalheServico']">
     <div class="card-body">
-      <h4 class="card-title">teste
-          <span class="badge badge-pill badge-info">teste</span>
+      <h4 class="card-title">Professor particular
+          <span class="badge badge-pill badge-info">R$ 70</span>
       </h4>
-      <p class="card-text">teste</p>
+      <p class="card-text">Pedagogo, com especialização no Atendimento Educacional Especializado e Neuroaprendizagem.</p>
       <button class="btn btn-primary btn-sm">Contrate-me</button>      
     </div>
     </a>
-  </div>-->
+  </div>
+  <div class="card">
+    <a [routerLink]="['/detalheServico']">
+    <div class="card-body">
+      <h4 class="card-title">Aula de violão
+          <span class="badge badge-pill badge-info">R$ 100</span>
+      </h4>
+      <p class="card-text">Aula de Violão particular! Mais de 15 anos de experiência com música. Prática de bandas.</p>
+      <button class="btn btn-primary btn-sm">Contrate-me</button>      
+    </div>
+    </a>
+  </div>
+  <div class="card">
+    <a [routerLink]="['/detalheServico']">
+    <div class="card-body">
+      <h4 class="card-title">Diarista
+          <span class="badge badge-pill badge-info">R$ 60</span>
+      </h4>
+      <p class="card-text">Serviço completo de limpeza, com mais de 10 anos de experiência na área. Faça já seu orçamento via contato.</p>
+      <button class="btn btn-primary btn-sm">Contrate-me</button>      
+    </div>
+    </a>
+  </div>
+  
+  <!-- FIM FIXO -->
+
 
 <div *ngFor="let servico of servicos" class="card">
   <a [routerLink]="['/detalheServico',servico.id]">

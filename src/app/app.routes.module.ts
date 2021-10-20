@@ -22,7 +22,7 @@ export const rootRouterConfig: Routes = [
   { path: "meusAnuncios", component: MeusAnunciosComponent },
   { path: "editarAnuncio", component: EditarAnuncioComponent },
   { path: "minhasTransacoes", component: MinhasTransacoesComponent },
-  { path: "detalheServico/:id", component: DetalheServicoComponent },
+  { path: "detalheServico", component: DetalheServicoComponent },
   { path: "contratarServico", component: ContratarComponent },
   { path: "cadastroServico", component: ServicoComponent },
 ];

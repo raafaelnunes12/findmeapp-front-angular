@@ -20,4 +20,8 @@ export class MeusDadosComponent implements OnInit {
       console.log(this.usuario);
     });
   }
+
+  excluir(){
+    alert("Registro excluído!")
+  }
 }

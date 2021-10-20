@@ -10,8 +10,7 @@ export class ContratarComponent {
 
   constructor() { }  
 
-  calculaValorTotal(){
-    let totalValor = this.valorHora * this.qtdeHoras;
-    return totalValor;
+  ok(){
+    alert("Serviço contratado!")
   }
 }

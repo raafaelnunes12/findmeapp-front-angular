@@ -6,7 +6,7 @@
             <span class="badge badge-default">Educação</span>
             <span class="badge badge-pill badge-info" #valorHora>R$ 70</span>
         </div>
-        <p class="card-text">Contato: Fulana Silva</p>     
+        <p class="card-text">Contato: Victor Cavalheiro</p>     
         <div class="form-group">
            <label class="label-control">Data do serviço</label>
            <input type="text" class="form-control datetimepicker"/>   
@@ -55,10 +55,10 @@
           </div>
           <div class="form-group-valor">            
               <label class="label-control">Total</label> 
-              <span class="badge badge-valor">R$ {{ calculaValorTotal }}</span>
-              <p>Você ganhará {{ calculaValorTotal }} pontos!</p>            
+              <span class="badge badge-valor">R$ 70</span>
+              <p>Você ganhará 70 pontos!</p>            
           </div>
         <div class="btn-detalhes">            
-            <button class="btn btn-primary btn-round">Contratar</button>
+            <button class="btn btn-primary btn-round" (click)="ok()">Contratar</button>
         </div>  
   </div>
