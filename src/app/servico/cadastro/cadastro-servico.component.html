@@ -25,7 +25,14 @@
                   name="titulo"
                   placeholder="Título do anúncio"
                 />
-                <input
+              </div>
+              <div class="input-group" style="margin-top: 2px">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">
+                    <i class="material-icons">person</i>
+                  </span>
+                </div>
+                     <input
                   type="text"
                   class="form-control"
                   [(ngModel)]="servico.usuario_nome"
@@ -94,7 +101,7 @@
                 class="btn btn-primary btn-link btn-wd btn-lg bg"
                 >Salvar</a
               >
-              <a class="btn btn-primary btn-link btn-wd btn-lg">Voltar</a>
+              <a [routerLink]="['/principal']" class="btn btn-primary btn-link btn-wd btn-lg">Voltar</a>
             </div>
           </form>
         </div>

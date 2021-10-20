@@ -11,9 +11,8 @@
         class="form-control selectpicker"
         placeholder="Buscar por categoria>"
         data-style="btn btn-link"
-        id="exampleFormControlSelect1"
-      >
-        <option value="" disabled selected>Filtre uma categoria</option>
+        id="exampleFormControlSelect1">
+        <option value="" disabled selected id="categoria">Filtre uma categoria</option>
         <option>Agro/indústria</option>
         <option>Automóveis</option>
         <option>Educação</option>
@@ -47,7 +46,7 @@
   </div>-->
 
 <div *ngFor="let servico of servicos" class="card">
-  <a [routerLink]="['/detalheServico']">
+  <a [routerLink]="['/detalheServico',servico.id]">
     <div class="card-body">
       <h4 class="card-title">
         {{ servico.titulo }}

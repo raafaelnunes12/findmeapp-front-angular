@@ -45,6 +45,17 @@ export class ServiceService {
     return this.http.get<servico[]>(this.urlServico);
   }
 
+  obterServicosPorCategoria(nome: String): Observable<servico[]> {
+    
+    if (nome == null) {
+        const urlServicoCategoria=  this.urlServico + "/categoria/ " + nome; 
+        return this.http.get<servico[]>(urlServicoCategoria);
+    } else {
+        return this.obterServicos();
+    }
+    
+  }
+
   // Service para o Transacao Servico:
 
   urlTransacaoServico = this.url + "/transacao_servico";

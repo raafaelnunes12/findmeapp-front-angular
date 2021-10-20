@@ -5,7 +5,7 @@ import { ServiceService } from "src/app/service/service.service";
 
 @Component({
   selector: "app-minhas-transacoes",
-  template: "minhas-transacoes.component.html",
+  templateUrl: "minhas-transacoes.component.html",
   styles: [],
 })
 export class MinhasTransacoesComponent implements OnInit {
@@ -27,26 +27,3 @@ export class MinhasTransacoesComponent implements OnInit {
     });
   }
 }
-
-/*
-import { Component, OnInit } from '@angular/core';
-
-@Component({
-  selector: 'app-minhas-transacoes',
-  template: `
-    <p>
-      minhas-transacoes works!
-    </p>
-  `,
-  styles: [
-  ]
-})
-export class MinhasTransacoesComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
-}
-*/

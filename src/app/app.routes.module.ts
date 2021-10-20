@@ -8,9 +8,9 @@ import { CadastroComponent } from "./usuario/cadastro/cadastro.component";
 import { EditarAnuncioComponent } from "./servico/meus-anuncios/editar-anuncio/editar-anuncio.component";
 import { MeusAnunciosComponent } from "./servico/meus-anuncios/meus-anuncios.component";
 import { MeusDadosComponent } from "./usuario/meus-dados/meus-dados.component";
-import { MinhasTransacoesComponent } from "./transacao-servico/minhas-transacoes/minhas-transacoes.component";
 import { ServicoComponent } from "./servico/cadastro/cadastro-servico.component";
 import { ContratarComponent } from "./transacao-servico/contratar/contratar.component";
+import { MinhasTransacoesComponent } from "./transacao-servico/minhas-transacoes/minhas-transacoes.component";
 
 export const rootRouterConfig: Routes = [
   { path: "", redirectTo: "/login", pathMatch: "full" },
@@ -22,7 +22,7 @@ export const rootRouterConfig: Routes = [
   { path: "meusAnuncios", component: MeusAnunciosComponent },
   { path: "editarAnuncio", component: EditarAnuncioComponent },
   { path: "minhasTransacoes", component: MinhasTransacoesComponent },
-  { path: "detalheServico", component: DetalheServicoComponent },
+  { path: "detalheServico/:id", component: DetalheServicoComponent },
   { path: "contratarServico", component: ContratarComponent },
   { path: "cadastroServico", component: ServicoComponent },
 ];

@@ -47,7 +47,7 @@ import { ServiceService } from "./service/service.service";
     DeletarComponent,
     FiltrarPorCategoriaComponent,
     TransacaoServicoComponent,
-    ContratarComponent,
+    ContratarComponent
   ],
   imports: [
     BrowserModule,
@@ -55,7 +55,7 @@ import { ServiceService } from "./service/service.service";
     HttpClientModule,
     FormsModule,
     CommonModule,
-    ReactiveFormsModule,
+    ReactiveFormsModule    
   ],
   providers: [{ provide: APP_BASE_HREF, useValue: "/" }, ServiceService],
   bootstrap: [AppComponent],
